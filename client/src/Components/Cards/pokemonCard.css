@@ -1,0 +1,58 @@
+.CardPkmn{
+    margin-top: 4%;
+    margin: 8px;
+    position: relative;
+    left: 5px;
+    height: 255px;
+    width: 200px;
+    border: transparent;
+    border-top: 5px solid rgb(99, 99, 99);
+    border-bottom: 5px solid #636363;
+    background-color: rgb(192, 192, 192, 0.8);
+    border-radius: 40px 0 40px 0;
+    margin-bottom: 20px;
+}
+.Name{
+    height: max-content;
+    font-weight: bold;
+    color: rgb(99, 99, 99);
+    position: relative;
+    top: -22px;
+    text-align: center;
+    text-transform: capitalize;
+    border-start-start-radius: 15px;
+    border-start-end-radius: 15px;
+}
+.Types{
+    left: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 90px);
+    font-weight: bold;
+    color: rgb(99, 99, 99);
+    position: absolute;
+    top: 208px;
+    align-self: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+.bg{
+    position: relative;
+    height: 170px;
+    width: 170px;
+    left: 10px;
+    top: -40px;
+    border-left: 5px solid rgb(255,242,153);
+    border-right: 5px solid rgb(255,242,153);
+    background-color: rgb(255,242,153,0.6);
+    border-radius: 100%;
+}
+
+p{
+    margin-bottom: -10px;
+    height: 23.5px;
+    width: 80px;
+    border-radius: 25px;
+    color: rgb(99, 99, 99);;
+    font-weight: bold;
+    border: 1px solid rgb(99, 99, 99);;
+}

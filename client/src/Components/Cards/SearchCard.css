@@ -1,0 +1,62 @@
+.CardSearch{
+    display: flex;
+    margin-top: 4%;
+    margin: 10px;
+    position: relative;
+    height: 100px;
+    width: fit-content;
+    border: 1px solid rgb(99, 99, 99);
+    background-color: rgb(192, 192, 192, 0.9);
+    margin-bottom: 20px;
+    border-radius: 30px 100% 100% 30px;
+    border-right: 20px solid rgb(99, 99, 99, 0.8);
+    border-left: 5px solid rgb(99, 99, 99, 0.8);
+}
+
+.areaid{
+    width: 50px;
+}
+.idpkmn{
+    text-decoration: none;
+    position: relative;
+    color:rgb(255, 255, 255); 
+    font-size: 25px;
+    left: 10px;
+    top: 10px;
+    font-size: 10px;
+}
+
+.areaname{
+    width: 150px;
+}
+.namepkmn{
+    text-decoration: none;
+    height: max-content;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -5px;
+    left:25px;
+    text-transform: capitalize;
+    border-start-start-radius: 15px;
+    border-start-end-radius: 15px;
+    font-size: 15px;
+}
+.typespkmn{
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(99, 99, 99);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 90px);
+    top: -40px;
+    left: -35px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.spritepkmn{
+    position: relative;
+    top: 5px;
+    left: 40px;
+    border-radius: 15px;
+}

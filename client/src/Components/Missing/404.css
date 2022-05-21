@@ -1,0 +1,41 @@
+.rocket{
+    position: relative;
+    left: 450px;
+    top: 50px;
+}
+
+.jessie{
+    position: absolute;
+    top: 150px;
+    left: 130px;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(168,37,138);
+    background-color: rgb(255, 255, 255,0.75);
+    border-radius: 80px;
+}
+
+.james{
+    position: absolute;
+    top: 250px;
+    left: 900px;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(130, 111, 179);
+    background-color: rgb(255, 255, 255,0.75);
+    border-radius: 80px;
+}
+
+.scape{
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid #888;
+    border-radius: 80px;
+    position: absolute;
+    top: 500px;
+    left: 610px;
+    color: rgb(201, 201, 201);
+    background-color: black;
+}

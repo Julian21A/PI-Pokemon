@@ -1,0 +1,27 @@
+.Image{
+    position: absolute;
+    left: 32%;
+    top: 10%;
+}
+
+.button{
+    position: absolute;
+    top: 283px;
+    left: 182px;
+    width: 105px;
+    height: 84px;
+    border: 50px;
+    background-color: rgb(187,222,251);
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #888;
+    border-radius: 5px;
+    
+}
+.button:hover{
+    background-color: rgb(255,242,153,0.8);
+    color: rgb(166,166,165);
+    border: 1px solid #888;
+}
+

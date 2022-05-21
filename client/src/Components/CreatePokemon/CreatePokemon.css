@@ -1,0 +1,164 @@
+.CP{
+    background-color:rgb(228, 228, 228, 0.75);
+    border-radius: 25px;
+    text-align: center;
+    width: 600px;
+    height: 530px;
+    position: absolute;
+    left: 380px;
+    top: 70px;
+    color: rgb(90, 90, 90);
+    border: 2px solid rgb(90, 90, 90);
+}
+
+.CreatePokemon{
+    position: absolute;
+    display: grid;
+    width: 650px;
+    height: 450px;
+    grid-template-columns: repeat(2, 250px)
+}
+
+input{
+    margin: 5px;
+    height: 15px;
+    width: 130px;
+    border-radius: 5px;
+}
+
+h2{
+    position: relative;
+    top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(90, 90, 90)
+}
+
+label{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(90, 90, 90);
+    text-align: center;
+}
+
+.typesCreate{
+    position: relative;
+}
+
+.createButton{
+    position: relative;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    border: 1px solid rgb(56,56,56);
+    font-weight: bold;
+    color: rgb(226, 226, 226);
+    background-color: rgb(90, 90, 90);
+    left: 220px;
+    top: -15px;
+    font-size: 15px;
+}
+:hover.createButton{
+    background-color: rgb(172, 172, 172);
+    color: rgb(90, 89, 89);
+}
+
+.general{
+    width: 250px;
+    top: -15px;
+    text-align: center;
+    left: 50px;
+    position: relative;
+    border: 1px dotted rgb(90,90,90, 0.5);
+    border-right: 0px;
+    
+}
+
+.stat{
+    width: 250px;
+    top: -15px;
+    text-align: center;
+    left: 50px;
+    position: relative;
+    border: 1px dotted rgb(90,90,90,0.5)
+}
+
+.complement{
+    width: 500px;
+    position: relative;
+    left: 50px;
+    top:-16px;
+    border: 1px dotted rgb(90,90,90, 0.5);
+    border-top: 0px;
+    text-align: center;
+}
+
+.typesShow{
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+}
+
+select{
+    position: relative;
+    color: rgb(78, 78, 78);
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 150px;
+    height: 25px;
+    border: 1px solid rgb(90,90,90);
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(202, 199, 199, 0.8);
+    margin-top: 5px;
+}
+
+.spriteArea{
+    position: relative;
+    left: 35px;
+    display: flex;
+    width: 350px;
+}
+
+#sprite{
+    position: relative;
+    width: 350px;
+}   
+
+#Complement{
+    position: relative;
+    top: 0px;
+}
+
+#error{
+    font-size: 12px;
+    margin: 0px;
+    color: red;
+}
+
+#errorSpan{
+    display: flex;
+    margin-left: 100px ;
+}
+
+#errorH{
+    position: relative;
+    font-size: 12px;
+    margin: 0px;
+    color: red;
+    left: 15px;
+    top:-15px;
+}
+
+#errorW{
+    position: relative;
+    font-size: 12px;
+    margin: 0px;
+    color: red;
+    left: 155px;
+    top:-15px;
+}
+
+#infoC{
+    position: relative;
+    top: -10px;
+}

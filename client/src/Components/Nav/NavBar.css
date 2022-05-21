@@ -1,0 +1,79 @@
+.navbar {
+    height: 60px;
+    width: 100%px;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: rgb(228, 228, 228, 0.5);
+}
+
+.navbar nav {
+    height: 100%;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    height: 100%;
+}
+
+.list-item {
+    margin: 0;
+    display: flex;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.list-item a {
+    color: rgb(166,166,165);
+    height: 100%;
+    padding: 0px 10px;
+    border:1px solid rgb(255, 233, 111);
+    border-bottom: 5px solid rgb(255, 233, 111);
+    background-color: rgb(255,242,153);
+    font-weight: bold;
+    border-end-end-radius: 15px;
+    border-end-start-radius:15px ;
+}
+
+.list-item a:hover{
+    background-color: rgb(250,202,165);
+    color: rgb(166,166,165);
+    font-weight: bolder;
+    border: 2px;
+}
+
+.list-item a.active {
+    background-color: rgb(166,166,165);
+    color: rgb(241, 236, 229);
+    font-weight: bolder;
+    opacity: 10;
+    border:1px solid rgb(136, 136, 136);
+    border-bottom: 5px solid rgb(136, 136, 136);
+}
+
+.Text{
+    position: absolute;
+    left: 6.5%;
+    top:1.5%;
+    color: rgb(166,166,165);
+    font-size: 25px;
+    align-self: center;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.logo{
+    position: absolute;
+}

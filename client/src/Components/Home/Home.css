@@ -1,0 +1,42 @@
+.monsterZone{
+    margin-top: 0px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 215px);
+} 
+
+.loader{
+    width: 215px;
+    height: 270px;
+    position: absolute;
+    margin-left: 550px;
+    top: 200px;
+}
+
+.little{
+    position: relative;
+    left: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(136, 136, 136);
+}
+
+.organizer{
+    background-color: rgba(202, 199, 199, 0.3);
+    height: 35px;
+}
+
+.expand{
+    position: relative;
+    color: rgb(78, 78, 78);
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-right: 10px;
+    width: 150px;
+    height: 25px;
+    border: 1px solid rgb(90,90,90);
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(202, 199, 199, 0.8);
+    margin-top: 5px;
+    left: 30px;
+}
