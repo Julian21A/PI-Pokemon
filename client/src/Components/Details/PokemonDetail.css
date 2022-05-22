@@ -84,3 +84,103 @@
     top: -15px;
     
 }
+
+#back1{
+    position: relative;
+    top: -80px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: transparent;
+    font-weight: bold;
+    background-color: rgb(138, 137, 137, 0.5);
+    color: rgb(236, 233, 233, 0.8);
+    font-size: 15px;
+    text-align: center;
+}
+
+#back10{
+    position: relative;
+    top: -80px;
+    left: 80px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: transparent;
+    font-weight: bold;
+    background-color: rgb(138, 137, 137, 0.5);
+    color: rgb(236, 233, 233, 0.8);
+    font-size: 15px;
+    text-align: center;
+}
+
+#back100{
+    position: relative;
+    top: -80px;
+    left: 179px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: transparent;
+    font-weight: bold;
+    background-color: rgb(138, 137, 137, 0.5);
+    color: rgb(236, 233, 233, 0.8);
+    font-size: 15px;
+    text-align: center;
+}
+
+#next1{
+    position: relative;
+    top: -80px;
+    left: 867px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: transparent;
+    font-weight: bold;
+    background-color: rgb(138, 137, 137, 0.5);
+    color: rgb(236, 233, 233, 0.8);
+    font-size: 15px;
+    text-align: center;
+}
+
+#next10{
+    position: relative;
+    top: -80px;
+    left: 767px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: transparent;
+    font-weight: bold;
+    background-color: rgb(138, 137, 137, 0.5);
+    color: rgb(236, 233, 233, 0.8);
+    font-size: 15px;
+    text-align: center;
+}
+
+#next100{
+    position: relative;
+    top: -80px;
+    left: 667px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: transparent;
+    font-weight: bold;
+    background-color: rgb(138, 137, 137, 0.5);
+    color: rgb(236, 233, 233, 0.8);
+    font-size: 15px;
+    text-align: center;
+}
+
+#back{
+    display: flex;
+    position: absolute;
+}
+
+#next{
+    display: flex;
+    position: absolute;
+}

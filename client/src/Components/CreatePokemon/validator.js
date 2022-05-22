@@ -9,8 +9,8 @@ export default function validators(input) {
     errors.name = "Name Required (min 3 characters)";
   }
 
-  if (input.height > 1000000) {
-    errors.height = "max heigth 1000000 g";
+  if (input.height > 1000) {
+    errors.height = "max heigth 1000 Kg";
   } else if (!input.height) {
     errors.height = "Height is necessary";
   }

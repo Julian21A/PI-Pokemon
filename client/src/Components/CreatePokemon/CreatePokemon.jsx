@@ -108,7 +108,7 @@ export function CreatePokemon(props) {
                 <label id="infoC">Height(cm): </label>
                 <input id="infoC" type='number'  key={'6'} name='height' value={input.height} min ="1"
                 onChange={(e) => handleChange(e)}/>
-                <label id="infoC" >Weight(g): </label>
+                <label id="infoC" >Weight(Kg): </label>
                 <input id="infoC" type='number' key={'7'} name='weight' value={input.weight} min ="1"
                 onChange={(e) => handleChange(e)}/>
                 <div id="errorSpan">

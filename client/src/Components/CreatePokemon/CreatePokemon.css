@@ -64,33 +64,35 @@ label{
 }
 
 .general{
-    width: 250px;
+    width: 255px;
     top: -15px;
     text-align: center;
-    left: 50px;
+    left: 45px;
     position: relative;
     border: 1px dotted rgb(90,90,90, 0.5);
     border-right: 0px;
-    
+    border-radius: 25px  0 0 0;
 }
 
 .stat{
-    width: 250px;
+    width: 255px;
     top: -15px;
     text-align: center;
     left: 50px;
     position: relative;
-    border: 1px dotted rgb(90,90,90,0.5)
+    border: 1px dotted rgb(90,90,90,0.5);
+    border-radius: 0 25px 0 0;
 }
 
 .complement{
-    width: 500px;
+    width: 510px;
     position: relative;
-    left: 50px;
+    left: 45px;
     top:-16px;
     border: 1px dotted rgb(90,90,90, 0.5);
     border-top: 0px;
     text-align: center;
+    border-radius: 0 0 25px 25px;
 }
 
 .typesShow{
@@ -154,7 +156,7 @@ select{
     font-size: 12px;
     margin: 0px;
     color: red;
-    left: 155px;
+    left: 160px;
     top:-15px;
 }
 

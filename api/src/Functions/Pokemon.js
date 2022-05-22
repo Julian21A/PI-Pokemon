@@ -107,7 +107,7 @@ const getPkmnByID= async (id) => {
                 defense: Math.floor(pkmn.stats[2].base_stat/2 +pkmn.stats[4].base_stat/2),
                 speed: pkmn.stats[5].base_stat,
                 height: (pkmn.height*10),
-                weight: (pkmn.weight*100),
+                weight: (pkmn.weight/10),
                 sprite: pkmn.sprites.other['official-artwork'].front_default,
                 types: ((pkmn.types.length<2) ? ([pkmn.types[0].type.name]) : [pkmn.types[0].type.name, pkmn.types[1].type.name] )
             }

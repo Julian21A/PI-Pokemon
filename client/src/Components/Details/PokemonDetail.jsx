@@ -3,6 +3,7 @@ import { getPokemonDetails } from "../../Redux/Actions/index"
 import React, { useEffect } from 'react';
 import { connect, useDispatch } from 'react-redux';
 import { colours } from "../../assests/Colors"
+import { Link } from "react-router-dom";
 
 export function PokemonDetail(props){
 
@@ -30,9 +31,62 @@ export function PokemonDetail(props){
                     <h3>Defense: {props.detail[0].defense}</h3>
                     <h3>Speed: {props.detail[0].speed}</h3>
                 </div>
+                <div id='back'>
+                    {props.detail[0].id <898 ?
+                    (<Link to={`/h/pokemons/${props.detail[0].id+1}`}>
+                        <input type="submit" value="1" id='next1'/>
+                    </Link>)
+                    : null
+                    }
+                    {props.detail[0].id <889 ?
+                        (<Link to={`/h/pokemons/${props.detail[0].id+10}`}>
+                            <input type="submit" value="10" id='next10'/>
+                        </Link>)
+                        : props.detail[0].id <898?
+                        (<Link to={`/h/pokemons/898`}>
+                            <input type="submit" value="10" id='next10'/>
+                        </Link>): null
+                    }
+                    {props.detail[0].id <798 ?
+                        (<Link to={`/h/pokemons/${props.detail[0].id+100}`}>
+                            <input type="submit" value="100" id='next100'/>
+                        </Link>)
+                        : props.detail[0].id <898?
+                        (<Link to={`/h/pokemons/898`}>
+                            <input type="submit" value="100" id='next100'/>
+                        </Link>): null
+                    }
+                </div>
+                <div id='next'>
+                    {props.detail[0].id >100 ?
+                        (<Link to={`/h/pokemons/${props.detail[0].id-100}`}>
+                            <input type="submit" value="100" id='back100'/>
+                        </Link>)
+                        :  props.detail[0].id <=100 &&  props.detail[0].id >1 ?
+                        (<Link to={`/h/pokemons/1`}>
+                            <input type="submit" value="100" id='back100'/>
+                        </Link>):null
+                    }
+                    {props.detail[0].id >10 ?
+                        (<Link to={`/h/pokemons/${props.detail[0].id-10}`}>
+                            <input type="submit" value="10" id='back10'/>
+                        </Link>)
+                        :  props.detail[0].id <=10 &&  props.detail[0].id >1 ?
+                        (<Link to={`/h/pokemons/1`}>
+                            <input type="submit" value="10" id='back10'/>
+                        </Link>):null
+                    }
+                    {props.detail[0].id > 1 ?
+                        (<Link to={`/h/pokemons/${props.detail[0].id-1}`}>
+                            <input type="submit" value="1" id='back1'/>
+                        </Link>)
+                        : null
+                    }
+                </div>
+                
                 <div className='extraInfo'>
                     <h3>height: {props.detail[0].height} cm</h3>
-                    <h3>weight: {props.detail[0].weight} g</h3>
+                    <h3>weight: {props.detail[0].weight} Kg</h3>
                 </div>
                 <div className='types'>
                     <h3>Types:</h3>
@@ -66,6 +120,7 @@ export function PokemonDetail(props){
                     </div>
                 </div> 
             </div>):null
+            
             }
         </div>
     )  

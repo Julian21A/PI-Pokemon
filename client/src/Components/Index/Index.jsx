@@ -1,6 +1,6 @@
 import React from "react";
 import './Index.css'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import bg from '../../assests/pokedexNDS.png'
 
 export function IndexL(){
@@ -9,9 +9,9 @@ export function IndexL(){
             <div className="Image">
                 <img className='pkdx' src={ bg } alt='pokedex.png'/>
                 <div className="Button">
-                    <NavLink to='/h'>
+                    <Link to='/h'>
                         <input className='button' type="button" value="Home" />
-                    </NavLink>
+                    </Link>
                 </div>
                 
             </div>
