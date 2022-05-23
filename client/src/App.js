@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
-import IndexL from './Components/Index/Index.jsx';
-import Home from './Components/Home/Home.jsx'
+import IndexL from './Components/Index/Index.js';
+import Home from './Components/Home/Home.js'
 import NavBar from './Components/Nav/NavBar';
 import CreatePokemon from './Components/CreatePokemon/CreatePokemon';
 import PokemonDetail from './Components/Details/PokemonDetail';

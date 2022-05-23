@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './Home.css'
-import PokemonCard from "../Cards/pokemonCard.jsx"
+import PokemonCard from "../Cards/pokemonCard.js"
 import { filterOrigin, filterTypes, getAllPokemons, getTypes, orderByName, orderByStrength } from "../../Redux/Actions/index"
 import { connect, useDispatch } from "react-redux";
 import Buscador from '../Searcher/Searcher'

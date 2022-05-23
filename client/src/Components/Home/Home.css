@@ -1,16 +1,28 @@
 .monsterZone{
-    margin-top: 0px;
-    margin-left: 20px;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
     display: grid;
-    grid-template-columns: repeat(6, 215px);
+    grid-template-columns: repeat(6, 210px);
+    justify-self: center;
+    text-align: center;
+    width: 1300px;
+    height: 580px;
 } 
 
 .loader{
     width: 215px;
     height: 270px;
     position: absolute;
-    margin-left: 550px;
-    top: 200px;
+    left: 0px;
+    right: 0px;
+    top: 550px;
+    bottom: 0px;
+    margin: auto;
+    justify-content: center;
 }
 
 .little{

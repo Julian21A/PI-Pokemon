@@ -1,13 +1,24 @@
 .Image{
+    text-align: center;
+    width: 600px;
+    height: 530px;
     position: absolute;
-    left: 32%;
-    top: 10%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    justify-self: center;
 }
 
 .button{
     position: absolute;
-    top: 283px;
-    left: 182px;
+    left: 0px;
+    top: 130px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    justify-self: center;
     width: 105px;
     height: 84px;
     border: 50px;

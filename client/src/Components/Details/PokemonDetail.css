@@ -1,5 +1,9 @@
 .detailZone{
-    left: 185px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
     position: relative;
     background-color: rgba(192, 192, 192, 0.50);
     width: 1000px;

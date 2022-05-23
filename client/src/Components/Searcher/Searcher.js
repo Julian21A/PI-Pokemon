@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import './Searcher.css';
 import { getPokemon } from '../../Redux/Actions/index.js'
-import SearchCard from "../Cards/SearchCard.jsx"
+import SearchCard from "../Cards/SearchCard.js"
 import { colours } from "../../assests/Colors"
 
 export default function Searcher(props) {
@@ -82,3 +82,4 @@ export default function Searcher(props) {
         </div>
     )
 }
+
