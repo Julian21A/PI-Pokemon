@@ -18,8 +18,7 @@ module.exports = (sequelize) => {
 
       sprite: {
         type: DataTypes.STRING,
-        allowNull: false,
-        defaultValue: `https://i.pinimg.com/originals/a6/4f/c7/a64fc73a5a257f7c6797205bd46d4842.png`
+        allowNull: true,
       },
 
       health: {
