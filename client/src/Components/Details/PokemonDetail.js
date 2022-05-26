@@ -1,5 +1,5 @@
 import './PokemonDetail.css';
-import { getPokemonDetails } from "../../Redux/Actions/index"
+import { getPokemonDetails, cleaner } from "../../Redux/Actions/index"
 import React, { useEffect } from 'react';
 import { connect, useDispatch } from 'react-redux';
 import { colours } from "../../assests/Colors"
@@ -14,6 +14,10 @@ export function PokemonDetail(props){
     useEffect(()=> {
         dispatch(getPokemonDetails(params))
     },[dispatch, params])
+    
+    useEffect(()=>{
+        return dispatch(cleaner())
+    })
 
     return(
         <div className="detailZone">

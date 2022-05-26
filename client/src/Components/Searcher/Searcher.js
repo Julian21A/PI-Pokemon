@@ -14,8 +14,9 @@ export default function Searcher(props) {
     const [input, setInput]= useState('')
 
     function handleChange(event) {
-        setInput(event.target.value);
+            setInput(event.target.value)
     }
+
     function handleSubmit(event) {
         event.preventDefault();
         dispatch(getPokemon(input))

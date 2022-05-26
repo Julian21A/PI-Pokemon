@@ -8,13 +8,15 @@ import {
   ORDER_BY_STRENGTH,
   FILTER_ORIGIN,
   FILTER_BY_TYPE,
-  CREATE_POKEMON 
+  CREATE_POKEMON,
+  CLEAN,
+  CLEAN_DETAIL
 } from "./actionTypes";
 
 export function getAllPokemons(){
   return async function (dispatch) {
    try {
-      return fetch(`http://localhost:3001/pokemons`)
+      return await fetch(`http://localhost:3001/pokemons`)
         .then(r => r.json())
         .then(json => dispatch(
           {
@@ -117,3 +119,17 @@ export function createPokemon(info){
     }
   };
 };
+
+export function cleaner(){
+  return {
+    type: CLEAN,
+    payload: []
+  }
+}
+
+export function cleanerDetail(){
+  return{
+    type: CLEAN_DETAIL,
+    payload: []
+  }
+}

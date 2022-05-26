@@ -7,7 +7,9 @@ import {
     ORDER_BY_STRENGTH,
     FILTER_ORIGIN,
     FILTER_BY_TYPE,
-    CREATE_POKEMON 
+    CREATE_POKEMON,
+    CLEAN,
+    CLEAN_DETAIL
   } from "../Actions/actionTypes";
 
 
@@ -159,6 +161,18 @@ const rootReducer = (state = initialState, action) => {
                 ...state,
                allPokemons: filterCondition.length > 0 ? filterCondition : pkmnsGroup,
             };
+        
+        case CLEAN:
+            return{
+                ...state,
+                pokemonSearch: action.payload,
+            }
+
+        case CLEAN_DETAIL:
+            return{
+                ...state,
+                detail: action.payload,
+            }
         
         default: return state
     }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './Home.css'
 import PokemonCard from "../Cards/pokemonCard.js"
-import { filterOrigin, filterTypes, getAllPokemons, getTypes, orderByName, orderByStrength } from "../../Redux/Actions/index"
+import { filterOrigin, filterTypes, getAllPokemons, getTypes, orderByName, orderByStrength, cleaner, cleanerDetail } from "../../Redux/Actions/index"
 import { connect, useDispatch } from "react-redux";
 import Buscador from '../Searcher/Searcher'
 import PageSystem from "../Pagination/Pagination";
@@ -12,7 +12,7 @@ export function Home(props){
   
   const dispatch = useDispatch();
 
-  const [actualPage, setactualPage] = useState();
+  const [actualPage, setactualPage] = useState(1);
   const [pkmnPerPage] = useState(12);
   const [, setOrden] = useState("");
 
@@ -34,6 +34,12 @@ export function Home(props){
     dispatch(getAllPokemons())
     dispatch(getTypes())
   },[dispatch])
+
+ 
+
+  useEffect(()=>{
+    return dispatch(cleanerDetail())
+  })
 
   function handleSortName(e) {
     e.preventDefault();
@@ -80,7 +86,7 @@ export function Home(props){
               <option value="reset">Default Order</option>
             </select>
 
-            <select className="expand" id="allTypes" onChange={(e) => {handleFilterByType(e);}}>
+            <select className="expand" id="allTypes" onChange={(e) => {handleFilterByType(e)}}>
               <option defaultValue='null' hidden selected>- Filter By Types -</option>
               <option value="all">All Types</option>
               {props.types?.map((e) => (

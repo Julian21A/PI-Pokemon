@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { connect, useDispatch } from "react-redux";
-import { getTypes, createPokemon } from '../../Redux/Actions/index';
+import { getTypes, createPokemon, cleaner } from '../../Redux/Actions/index';
 import './CreatePokemon.css'
 import validators from './validator'
 
@@ -25,6 +25,10 @@ export function CreatePokemon(props) {
     })
 
     const [error, setError] = useState({});
+
+    useEffect(()=>{
+        return dispatch(cleaner())
+    })
 
     let handleChange = (e) => {
         if(e.target.name === 'types'){

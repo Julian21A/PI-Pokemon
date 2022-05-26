@@ -10,7 +10,7 @@ const PageSystem = ({ pkmnPerPage, totalPkmn, paginate, actPage }) => {
 
     const setPage = (n) => {
         paginate(n);
-        localStorage.setItem("Pg", n);
+        localStorage.setItem("page", n);
     }; 
 
     return (
