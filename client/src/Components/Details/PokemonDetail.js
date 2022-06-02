@@ -13,11 +13,8 @@ export function PokemonDetail(props){
 
     useEffect(()=> {
         dispatch(getPokemonDetails(params))
-    },[dispatch, params])
-    
-    useEffect(()=>{
         return dispatch(cleaner())
-    })
+    },[dispatch, params])
 
     return(
         <div className="detailZone">

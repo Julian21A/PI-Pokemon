@@ -15,8 +15,8 @@ router.get("/", async (req, res, next) => {
         else{
             const pkmnByName_DB = await getPkmnDB()
             .then((res)=> res.filter(
-                (pkmn) => pkmn.name.toLowerCase().trim() === name.toLowerCase().trim()
-                )
+                (pkmn) => pkmn.name.includes(name)
+                ) 
             );
 
             if(pkmnByName_DB.length > 0){

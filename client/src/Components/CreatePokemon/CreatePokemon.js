@@ -3,10 +3,13 @@ import { connect, useDispatch } from "react-redux";
 import { getTypes, createPokemon, cleaner } from '../../Redux/Actions/index';
 import './CreatePokemon.css'
 import validators from './validator'
+import { useHistory} from "react-router-dom";
 
 export function CreatePokemon(props) {
     
     const dispatch = useDispatch();
+
+    let history = useHistory();
 
     useEffect(()=> {
         dispatch(getTypes())
@@ -56,12 +59,15 @@ export function CreatePokemon(props) {
             setInput({
                 name: "",health: 30,strength: 30,defense: 30,speed: 30,height: 30,weight: 30,types: [],sprite:'',
             })
+            history.push("/h");
+            
         })()
         : (() => {
             window.alert(`${input.name} didn't join your team`);
             setInput({
                 name: "",health: 30,strength: 30,defense: 30,speed: 30,height: 30,weight: 30,types: [],sprite:'',
             })
+            history.push("/h");
         })();
     };
 

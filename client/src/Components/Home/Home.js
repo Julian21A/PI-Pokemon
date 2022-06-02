@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './Home.css'
 import PokemonCard from "../Cards/pokemonCard.js"
-import { filterOrigin, filterTypes, getAllPokemons, getTypes, orderByName, orderByStrength, cleaner, cleanerDetail } from "../../Redux/Actions/index"
+import { filterOrigin, filterTypes, getAllPokemons, getTypes, orderByName, orderByStrength, cleanerDetail } from "../../Redux/Actions/index"
 import { connect, useDispatch } from "react-redux";
 import Buscador from '../Searcher/Searcher'
 import PageSystem from "../Pagination/Pagination";
@@ -33,13 +33,8 @@ export function Home(props){
   useEffect(()=> {
     dispatch(getAllPokemons())
     dispatch(getTypes())
-  },[dispatch])
-
- 
-
-  useEffect(()=>{
     return dispatch(cleanerDetail())
-  })
+  },[dispatch])
 
   function handleSortName(e) {
     e.preventDefault();
@@ -54,12 +49,14 @@ export function Home(props){
   }
 
   function handleFilterOrigin(e) {
+    setactualPage(1)
     dispatch(filterOrigin(e.target.value));
   }
 
   function handleFilterByType(e) {
     e.preventDefault();
     let createdApiDb = document.getElementById("createdApiDb").value;
+    setactualPage(1)
     dispatch(filterTypes(e.target.value, createdApiDb)); 
   }
 
